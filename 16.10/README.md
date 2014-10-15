@@ -9,6 +9,20 @@
 <b>Задача 3</b>
 
 Напишете булев израз, който казва дали, въведена от клавиатурата, точка е от вътрешността на правоъгълник, зададен със следните четири точки: (1, 1), (5, 1), (1, 3), (5, 3).
+<div class="highlight highlight-c++">
+<span class="mi">3</span> <span class="mi">2</span>
+<span class="c1">// -&gt; true</span>
+
+<span class="mi">4</span> <span class="mi">4</span>
+<span class="c1">// -&gt; false</span>
+
+<span class="mi">5</span> <span class="mf">2.9</span>
+<span class="c1">// -&gt; true</span>
+
+<span class="mi">2</span> <span class="mf">0.99</span>
+<span class="c1">// -&gt; false</span>
+</div>
+
 
 <b>Задача 4</b>
 
