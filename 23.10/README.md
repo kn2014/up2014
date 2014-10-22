@@ -1,4 +1,5 @@
 <b>Задача 1</b>
+<p><div class="highlight highlight-c++">
 <pre>
 <span class="n">int n=</span> <span class="mf">20</span><span class="p">;</span>
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">hex</span> <span class="o">&lt;&lt;</span> <span class="n">showbase</span> <span class="o">&lt;&lt;</span> <span class="n">n</span><span class="p">;</span><span class="c1">// -&gt; 0x14</span>
@@ -22,6 +23,6 @@
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">setprecision</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mf">9.87654321</span><span class="p">;</span>                <span class="c1">// -&gt; 9.88</span>
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">setprecision</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">fixed</span> <span class="o">&lt;&lt;</span> <span class="mf">9.87654321</span><span class="p">;</span>       <span class="c1">// -&gt; 9.877</span>
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">setprecision</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">scientific</span> <span class="o">&lt;&lt;</span> <span class="mf">98.7654321</span><span class="p">;</span>  <span class="c1">// -&gt; 9.877e+001</span>
-</pre>
+</pre></div></p>
 
 <a href="http://tinypic.com?ref=o92zcw" target="_blank"><img src="http://i57.tinypic.com/o92zcw.png" border="0" alt="Image and video hosting by TinyPic"></a>
