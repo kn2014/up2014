@@ -17,7 +17,7 @@ int main()
         if(i==0) { Nmax = 0; Smax = S; }
         if(S>Smax) { Smax = S; Nmax = i;}
     }
-    cout<<endl<<"Naj golqm sbor na red "<<Nmax<<" "<<Smax<<endl;
+    cout<<endl<<"Naj-golqm sbor na red "<<Nmax<<" "<<Smax<<endl;
 
     for(int i=0;i<n;i++)
     {
@@ -39,7 +39,7 @@ int main()
         if(j==0) { Nmax = 0; Smax = S; }
         if(S>Smax) { Smax = S; Nmax = j;}
     }
-     cout<<endl<<"Naj golqm sbor na kolona "<<Nmax<<" "<<Smax<<endl;
+     cout<<endl<<"Naj-golqm sbor na kolona "<<Nmax<<" "<<Smax<<endl;
 
     return 0;
 }
