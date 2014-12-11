@@ -67,6 +67,10 @@ int main()
             {
                 for (int k = 0; k<n; k++)
                 {
+                    sum[i] += sum[j];
+                    sum[i] = sum[i] - sum[j];
+                    sum[i] = sum[i] - sum[j];
+                    
                     a[k][i] += a[k][j];
                     a[k][j] = a[k][i] - a[k][j];
                     a[k][i] = a[k][i] - a[k][j];
