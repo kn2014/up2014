@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+void swap2(int* a, int* b){ // Искаме на функцията да се подадат адресите на две променливи от тип int
+    *a += *b;
+    *b = *a -*b;
+    *a = *a - *b;
+}
+
+int main()
+{
+    int x = 2, y = 5;
+    swap2(&x,&y); //Подаваме адресите x и y
+    cout<<"x = "<<x<<endl<<"y = "<<y<<endl;
+}
