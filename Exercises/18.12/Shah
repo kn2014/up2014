@@ -1,0 +1,82 @@
+#include<iostream>
+using namespace std;
+
+void printM(char a[8][8] ){
+    for (int i=0; i<8; i++){
+        for (int j = 0; j<8; j++){
+            cout<<a[i][j];
+        }
+        cout<<endl;
+    }
+}
+
+void findTop(char a[8][8], int& i, int& j){
+    for (i=0; i<8; i++)
+        for (j = 0; j<8; j++)
+                if (a[i][j] == 'R')
+                    return;
+}
+
+void Top (char a[8][8]){
+    int x, y;
+    findTop(a,x,y);
+    for (int i = x+1; i<8; i++)
+        if (a[i][y] != '#'){
+            a[i][y] = 'X';
+            break;
+        }
+
+    for (int i = x-1; i>=0; i--)
+        if (a[i][y] != '#'){
+            a[i][y] = 'X';
+            break;
+        }
+
+    for (int j = y+1; j<8; j++)
+        if (a[x][j] != '#'){
+            a[x][j] = 'X';
+            break;
+        }
+
+    for (int j = y-1; j>=0; j--)
+        if (a[x][j] != '#'){
+            a[x][j] = 'X';
+            break;
+        }
+}
+
+int main(){
+    char a[8][8];
+    for (int i=0; i<8; i++){
+        for (int j = 0; j<8; j++){
+            a[i][j] = '#';
+        }
+    }
+
+    cout<<"Vuvedete koordinatite na topa:"<<endl;
+    int i,j;
+    cin>>i>>j;
+    a[i][j] = 'R';
+    cout<<"Vuvedete koordinatite na konq:"<<endl;
+    cin>>i>>j;
+    if (a[i][j] == '#')
+        a[i][j] = 'K';
+    else cout<<"Poziciqta e ve4e zaeta."<<endl;
+    cout<<"Vuvedete koordinatite na caricata:"<<endl;
+    cin>>i>>j;
+    if (a[i][j] == '#')
+        a[i][j] = 'Q';
+    else cout<<"Poziciqta e ve4e zaeta."<<endl;
+    cout<<"Vuvejdaite koordinati za pe6ki. Ako iskate d sprete tqhnata invaziq '-1' i  o6te ne6to"<<endl;
+    while (i != -1){
+        cin>>i>>j;
+        if (a[i][j] == '#')
+            a[i][j] = 'P';
+        else cout<<"Poziciqta e ve4e zaeta."<<endl;
+    }
+    printM(a);
+    cout<<endl;
+    Top(a);
+    printM(a);
+
+}
